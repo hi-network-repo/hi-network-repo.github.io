@@ -1,6 +1,6 @@
 ---
 layout: landingpage
-title: '<span class="chulapa">⚠重要確認事項⚠</span>'
+title: '<span class="chulapa">⚠重要⚠</span>'
 subtitle: important
 excerpt: important
 header_type: splash
