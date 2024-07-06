@@ -8,6 +8,7 @@ header_img: "https://dsm04pap002files.storage.live.com/y4mVPpJ6YmtONX1Ygj0y-BkNJ
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
 show_sociallinks: false
+norobots: true
 ---
 
 重要なお知らせと同意事項

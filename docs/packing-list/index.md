@@ -3,6 +3,7 @@ title: 持ち物について
 subtitle: Packing List
 excerpt: Packing List
 show_toc: true
+norobots: true
 ---
 **自分で用意するの物**
 

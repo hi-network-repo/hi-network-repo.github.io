@@ -3,6 +3,7 @@ title: 集合について
 subtitle: About meeting place
 excerpt: About meeting place
 show_toc: true
+norobots: true
 ---
 **集合場所** 
 

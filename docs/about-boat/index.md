@@ -5,6 +5,7 @@ header_type: image
 header_img: "https://dsm04pap002files.storage.live.com/y4mcwmcJH8zKzNykpaiM0kPf_ftj09x7wA_SGAq1pH7OA5mAeLIYrO6hW72fkpGJw71GupdKvUbo6OBOJF151F0AvHn9FwSuXFfFE1bH2ISPN9-_CG9jzqXk5MIYvsG4D7XFjbupjtrP3skxWUMvqNAeBdvtIZmsM5K0-Rcqle2dgfBIFvn8SFy9_GgXJuuNkXpeD228XjKoerdIrM-e8HtAw?encodeFailures=1&width=1668&height=848"
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
+norobots: true
 
 ---
 
