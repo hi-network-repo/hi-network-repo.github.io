@@ -45,7 +45,7 @@ navbar:
     img: "./assets/img/site/bn.png"
     url: /
   nav:
-  - title: "⚠注意⚠"
+  - title: "⚠重要⚠"
     url: /catution/
   - title: "船について"
     url: /about-boat/
