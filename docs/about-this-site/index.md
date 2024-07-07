@@ -13,7 +13,7 @@ norobots: true
 連絡先&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINE公式 @612ixqpm
 
 
-<a href="https://lin.ee/qbgIW72"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" width="20%" height="20%" border="50"></a>  
+<a href="https://lin.ee/qbgIW72"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" width="35%" height="35%" border="50"></a><br><br>
   
 
 <img src="https://go-fishing.f5.si/assets/img/site/bn.png">
