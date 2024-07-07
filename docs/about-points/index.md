@@ -15,8 +15,8 @@ norobots: true
 
 鱚の他にギマ，フグ，マゴチ，ヒラメなどが釣れるかもしれません。
 
-天気予報
-<iframe width="100%" height="187" src="https://embed.windy.com/embed.html?type=forecast&location=coordinates&detail=true&detailLat=34.77573719668075&detailLon=137.10176557750196&metricTemp=°C&metricRain=mm&metricWind=km/h" frameborder="0"></iframe>
+**天気予報**
+<iframe width="100%" height="187" src="https://embed.windy.com/embed.html?type=forecast&location=coordinates&detail=true&detailLat=34.77573719668075&detailLon=137.10176557750196&metricTemp=°C&metricRain=mm&metricWind=m/s" frameborder="0"></iframe>
   
   
 
