@@ -19,4 +19,7 @@ norobots: true
   
   
 
-<iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=m/s&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe>
+<iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=m/s&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe><br>
+
+<br>
+<div style="width:160px"><script type="text/javascript" src="https://tackleberry.chowari.jp/blogparts/file/tide-deepblack-a/parts.js"></script><script type="text/javascript">showParts('https://tackleberry.chowari.jp/blogparts','77','')</script><a href="https://tackleberry.chowari.jp/blogparts/r.php" target="_blank"><img src="https://tackleberry.chowari.jp/blogparts/img/linkbanner.gif" style="margin:6px 0 10px; padding:0; border: 0; display: block;" /></a></div>
