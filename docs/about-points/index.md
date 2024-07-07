@@ -13,11 +13,10 @@ norobots: true
 
 鱚を釣りに行きます。 
 
-鱚の他にギマ，フグ，マゴチ，ヒラメなどが釣れるかもしれません。
-
+鱚の他にギマ，フグ，マゴチ，ヒラメなどが釣れるかもしれません。<br><br><br>
 **天気予報**
-<iframe width="100%" height="187" src="https://embed.windy.com/embed.html?type=forecast&location=coordinates&detail=true&detailLat=34.77573719668075&detailLon=137.10176557750196&metricTemp=°C&metricRain=mm&metricWind=m/s" frameborder="0"></iframe>
+<iframe width="100%" height="187" src="https://embed.windy.com/embed.html?type=forecast&location=coordinates&detail=true&detailLat=34.77573719668075&detailLon=137.10176557750196&metricTemp=°C&metricRain=mm&metricWind=m/s" frameborder="0"></iframe><br>
   
   
 
-<iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe>
+<iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=m/s&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe>
