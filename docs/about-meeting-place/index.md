@@ -14,4 +14,4 @@ norobots: true
 **集合時間** 
 
 - LINE公式でお知らせします
-<a href="https://lin.ee/qbgIW72"><img src="./assets/img/site/line_icon.png" alt="友だち追加" height="20%" border="0"></a>
+<a href="https://lin.ee/qbgIW72"><img src="https://go-fishing.f5.si/assets/img/site/line_icon.png" alt="友だち追加" width="20%" height="20%" border="0"></a>
