@@ -22,4 +22,4 @@ norobots: true
 <iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=m/s&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe><br>
 
 
-<iframe src="https://okappalink.com/index/parts3/?point_code=166&b=w" width="100%" height="450px" style="border:0; border:none;"></iframe>
+<iframe src="https://okappalink.com/index/parts3/?point_code=166&b=w" width="500" height="800px" style="border:0; border:none;"></iframe>
