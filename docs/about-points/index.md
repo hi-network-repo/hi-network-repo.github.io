@@ -20,4 +20,4 @@ norobots: true
   
   
 
-<iframe width="100" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe>
+<iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe>
