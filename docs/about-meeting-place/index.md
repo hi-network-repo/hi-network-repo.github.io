@@ -13,4 +13,5 @@ norobots: true
 
 **集合時間** 
 
-- AM5:00（天候によって変動有り） 
+- 公式LINEでお知らせします
+<a href="https://lin.ee/qbgIW72"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="40%" border="0"></a>
