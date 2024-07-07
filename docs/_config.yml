@@ -59,6 +59,9 @@ navbar:
     url: /fishing-report/
   - title: "このサイトについて"
     url: /about-this-site/
+  - title: "LINE"
+    icon: "fab fa-line"
+    url: "https://lin.ee/60dSS5n"
 footer:
   links: 
     - label: "LINE"
