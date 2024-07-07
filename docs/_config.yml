@@ -60,6 +60,10 @@ navbar:
   - title: "このサイトについて"
     url: /about-this-site/
 footer:
+  links: 
+    - label: "LINE"
+      icon: "fab fa-line"
+      url:  "https://lin.ee/60dSS5n"
   copyright: "&copy; 2024 Makoto & Hikaru, other..."
 
 # C. Theme Settings
