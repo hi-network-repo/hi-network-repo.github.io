@@ -22,7 +22,7 @@ norobots: true
 <iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=m/s&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=34.731&lon=137.084&detailLat=34.69589662514323&detailLon=137.02354431152347&marker=true&message=true" frameborder="0"></iframe><br>
 
 
-<iframe src="https://okappalink.com/index/parts3/?point_code=166&b=w" width="500" height="800px" style="border:0; border:none;"></iframe>
+<iframe src="https://okappalink.com/index/parts3/?point_code=166&b=w" width="393px" height="800px" style="border:0; border:none;"></iframe>
 
 
 <!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191665703"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191665703" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191665703" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="6.5" height="3.5"> </span></noscript><!--shinobi2-->
