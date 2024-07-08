@@ -23,3 +23,6 @@ norobots: true
 
 
 <iframe src="https://okappalink.com/index/parts3/?point_code=166&b=w" width="500" height="800px" style="border:0; border:none;"></iframe>
+
+
+<!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191665703"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191665703" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191665703" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="6.5" height="3.5"> </span></noscript><!--shinobi2-->

@@ -34,3 +34,5 @@ norobots: true
 上記の内容に同意していただいた場合のみ，釣行に参加して下さい。未成年の方は親の同意が必ず必要です。
 
 釣行に参加した時点で，上記の内容に同意したことになります。
+
+<!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191665701"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191665701" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191665701" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="6.5" height="3.5"> </span></noscript><!--shinobi2-->
