@@ -14,7 +14,7 @@ norobots: true
 **集合時間** 
 
 - LINE公式でお知らせします
-<a href="https://lin.ee/qbgIW72"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" width="35%" height="35%" border="200"></a>
+<a href="https://lin.ee/qbgIW72"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" width="35%" height="35%" border="200"></a><br>
 
 
 
