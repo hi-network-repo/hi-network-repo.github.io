@@ -9,6 +9,7 @@ timezone: Asia/Tokyo
 author:
   name: Site owner
   location: Aichi
+gtag_id: G-D4B755RMBS
 search:
   provider: algolia
   algolia_logo: true
