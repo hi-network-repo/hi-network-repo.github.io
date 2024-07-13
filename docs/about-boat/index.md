@@ -21,6 +21,5 @@ norobots: true
 
 Introuction
 
-{% include snippets/video.html fileurl="https://s3.ap-northeast-1-ntt.wasabisys.com/ak1520d-filenow-4/files/20240706-1848_41a484897eff368dcf83e2781c524cf2.mp4" %}
+{% include snippets/video.html fileurl="https://s3.ap-northeast-1-ntt.wasabisys.com/ak1520d-filenow-3/files/20240713-1837_a7a76633577a7648da0bd190817101a6.mp4" %}
 
-<!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191665702"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191665702" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191665702" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="6.5" height="3.5"> </span></noscript><!--shinobi2-->
