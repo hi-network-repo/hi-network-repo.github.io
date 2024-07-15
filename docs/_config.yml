@@ -7,8 +7,9 @@ description: Go by boat
 og_image: "./assets/img/site/bn.png"
 timezone: Asia/Tokyo
 author:
-  name: Site owner
-  location: Aichi
+  name: 釣り行こまい！
+  avatar: ./assets/img/site/bn.png
+  location: Aichi, Japan
 gtag_id: G-D4B755RMBS
 search:
   provider: algolia
@@ -78,18 +79,9 @@ chulapa-skin:
 
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 collections:
-  demo:
+posts:
     output: true
-    permalink: /demo/:name
-  docs:
-    output: true
-    permalink: /docs/:name
-  skins:
-    output: true
-    permalink: /skins/:name
-  posts:
-    output: true
-    permalink : /blog/:year:month:day_:title
+    permalink : /fishing-report/:year:month:day_:title
 collections_dir     : collections
 permalink           : /:year:month:day_:title
 paginate: 4
