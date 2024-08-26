@@ -1,0 +1,7 @@
+index.html 19140101
+/about-boat/index.md 19140101
+/about-meeting-place/index.md 19140101
+/about-points/index.md 19140101
+/about-this-site/index.md 19140101
+/catution/index.md 19140101
+/packing-list/index.md 19140101
