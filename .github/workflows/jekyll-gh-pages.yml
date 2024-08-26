@@ -41,7 +41,6 @@ jobs:
       - name: Encrypt pages with PageCrypt
         run: |
           ls
-          cd docs
           npm i -D pagecrypt
           cat _configp.txt | while read file password;
           do
