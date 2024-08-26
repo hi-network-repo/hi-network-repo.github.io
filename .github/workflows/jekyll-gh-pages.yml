@@ -40,6 +40,7 @@ jobs:
       # Note: this only encrypts .html pages and not any of the corresponding assets.
       - name: Encrypt pages with PageCrypt
         run: |
+          cd docs
           npm i -D pagecrypt
           cat _configp.txt | while read file password;
           do
