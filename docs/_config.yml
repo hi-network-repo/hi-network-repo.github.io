@@ -51,8 +51,10 @@ navbar:
     url: /catution/
   - title: "船について"
     url: /about-boat/
-  - title: "ポイントについて"
-    url: /about-points/
+  - title: "ポイント①について"
+    url: /about-point/
+  - title: "ポイント②について"
+    url: /about-point2/
   - title: "持ち物"
     url:  /packing-list/
   - title: "集合について"

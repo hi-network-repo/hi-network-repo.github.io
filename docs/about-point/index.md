@@ -1,7 +1,7 @@
 ---
-title: ポイントについて
-subtitle: About points
-excerpt: About points
+title: ポイント①について
+subtitle: About point
+excerpt: About point
 show_toc: true
 norobots: true
 ---
