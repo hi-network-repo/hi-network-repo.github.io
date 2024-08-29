@@ -61,7 +61,7 @@ navbar:
     url: /fishing-report/
   - title: "このサイトについて"
     url: /about-this-site/
-  - title: "LINE"
+  - title: "LINE公式を友達登録"
     icon: "fab fa-line"
     url: "https://lin.ee/60dSS5n"
 footer:
