@@ -23,13 +23,8 @@ norobots: true
 
 - クーラーボックス，氷 
 
-**船長が用意する物**
-
 - ライフジャケット（船内備え付け） 
 
 - 釣竿，リール，仕掛け，エサ 
 
-- 洗い用の水 
 
-
-<!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191665704"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191665704" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191665704" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="6.5" height="3.5"> </span></noscript><!--shinobi2-->
