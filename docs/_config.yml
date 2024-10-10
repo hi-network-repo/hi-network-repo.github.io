@@ -60,7 +60,7 @@ navbar:
   - title: "集合について"
     url: /about-meeting-place/
   - title: "釣果報告(当日に更新します)"
-    url: /fishing-report/
+    url: /fishing-report
   - title: "このサイトについて"
     url: /about-this-site/
   - title: "LINE公式を友達登録"
