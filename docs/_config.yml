@@ -81,7 +81,7 @@ chulapa-skin:
 
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 collections:
-posts:
+  fishing-report:
     output: true
     permalink : /fishing-report/:year:month:day_:title
 collections_dir     : collections
