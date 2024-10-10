@@ -11,11 +11,11 @@ show_author: true
 ---
 **7月15日の釣果**
 
-今日の釣果は…
-鱚&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;54匹
-コッパ&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;何匹か
-チャリコ(タイの幼魚)&emsp;何匹か
-ギマ&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;2匹ぐらい
+今日の釣果は…  
+鱚&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;54匹  
+コッパ&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;何匹か  
+チャリコ(タイの幼魚)&emsp;何匹か  
+ギマ&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;2匹ぐらい  
 
 
 
