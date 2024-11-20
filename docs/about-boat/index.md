@@ -19,7 +19,7 @@ norobots: true
 
 - ライフジャケット有り
 
-Introduction
+Introuction
 
-{% include snippets/video.html id="18KY4YRUpbaNWce0p0H6eQQ_akbmpQJgv" provider="google-drive" %}
+{% include snippets/video.html id="18KY4YRUpbaNWce0p0H6eQQ_akbmpQJgv" provider="youtube" %}
 
