@@ -1,0 +1,11 @@
+[
+null,
+{"id":1,"battlerName":"","characterIndex":1,"characterName":"yuu otona","classId":1,"equips":[2,0,0,3,0],"faceIndex":0,"faceName":"feisu","traits":[],"initialLevel":1,"maxLevel":99,"name":"ユウ","nickname":"","note":"","profile":"誰かを探す為に、屋敷を訪れた。"},
+{"id":2,"battlerName":"","characterIndex":0,"characterName":"yuu","classId":1,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"feisu","traits":[],"initialLevel":1,"maxLevel":99,"name":"ユウ（子供","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"","characterIndex":0,"characterName":"orohosu","classId":2,"equips":[0,0,0,0,0],"faceIndex":3,"faceName":"feisu","traits":[],"initialLevel":1,"maxLevel":99,"name":"オロホス","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":7,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":8,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""}
+]

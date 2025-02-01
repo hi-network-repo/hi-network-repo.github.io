@@ -1,0 +1,45 @@
+#FuwaMemo {
+    position: absolute; /* */
+    z-index: 999; /* */
+    resize: none;
+    /*width: 692px; ウインドウの幅*/
+    /*height: 261px;  ウインドウの高さ*/
+    /*width: 80%;*/
+    /*height: 41%;*/
+    /*    width: auto;
+    height:auto;*/
+    /*max-height: calc( 1.45em * 12 );*/
+    /*line-height: 145%;*/
+    font-weight: normal;
+    color: #000000;
+    /*text-shadow: black 0.04em 0.04em 0em, black -0.04em 0.04em 0em, black 0.04em -0.04em 0em, black -0.04em -0.04em 0em;*/
+    /*font-family: GameFont, rmmz-mainfont;*/
+    font-family: system-ui;
+    /*枠を消す*/
+    outline: none;
+    border: solid 0.0em #f8f8f8;
+    border-radius: 0.0em;
+    padding: 0.04em 0em;
+    background: rgba(0,0,0,0);
+    /*スクロールバーを消す
+    overflow: hidden;*/
+    /*単語区切らない*/
+    overflow-wrap: break-word;
+    word-break: break-all;
+    font-size: 17px;
+}
+/* ここからは、決定ボタンのデザインに関する設定です。 */
+#_111_submit {
+    position: absolute; /* */
+    z-index: 999; /* */
+
+    font-weight: bold;
+    color: #f8f8f8;
+    text-shadow: black 0.04em 0.04em 0em, black -0.04em 0.04em 0em, black 0.04em -0.04em 0em, black -0.04em -0.04em 0em;
+    font-family: GameFont, rmmz-mainfont;
+    outline: none;
+    border: solid 0.0em #f8f8f8;
+    border-radius: 0.0em;
+    padding: 0.04em 0.25em;
+    background: rgba(0,0,0,0);
+}

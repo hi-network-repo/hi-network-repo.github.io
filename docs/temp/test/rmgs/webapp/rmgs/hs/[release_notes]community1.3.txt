@@ -1,0 +1,163 @@
+﻿# RPGツクールMV コアスクリプト
+
+## community-1.3 リリースノート (*English follows Japanese)
+
+# 概要
+
+みなさん、おまたせしました！
+一年間のブランクを空け、コミュニティ版コアスクリプトが戻ってきました！！
+今回は様々な不具合修正に加え、オートセーブやローディングバーなどの新機能を追加しました。
+新機能はCommunity_Basicプラグインによって有効化できますので、ぜひ活用してみてください～
+
+# 新機能
+
+- マップ切替時にオートセーブする機能を追加しました。
+- シーン切替時に画像・音声の読み込み状況を表示するローディングバーを追加しました。
+- エラー発生時に詳細な情報（エラーが発生したイベントの情報・行番号やスタックトレースなど）を表示できるようになりました。
+- テキストスピードを変更できる機能を追加しました。文章の表示内で\S[数字]でスピードを変更でき、数字が大きいほどスピードが遅くなります（0で瞬間表示）。また、Community_Basicプラグインを用いてデフォルト値を指定できます。
+
+新機能はいずれもCommunity_Basicプラグインを用いて有効化することができます。
+
+# 改善
+
+- 敵キャラクター画像などがフラッシュする際の負荷を軽減しました。
+- ゲームをセーブ＆ロードする処理の負荷を軽減しました。
+- その他に数点、細かく効率を改善しました。
+
+# 不具合修正
+
+- Crosswalkを用いてAndroidアプリ版を出力するとゲームが正常に動作しない不具合を修正しました。
+- Enigma Virtual Boxを用いて出力したゲームで遊ぶとセーブができなくなる不具合を修正しました。
+- ブラウザ拡張によってエラーが発生した際に、ゲームが停止しないように修正しました。
+- iOSでローディングエラーが発生した場合に、リトライボタンをタッチできない不具合を修正しました。
+- 21pxよりも小さい文字を描画すると文字が滲む不具合を修正しました。
+- 状態異常などでアイテムを使用可能なパーティーメンバーが一人もいない状態でアイテムを使用するとエラーになる不具合を修正しました。
+- 大きな(ファイル名が$で始まる)キャラクターがウィンドウ内に正しく描画されない不具合を修正しました。
+- 一部のoggファイルのループタグを正しく読み込めない不具合を修正しました。
+- リフレッシュレートの高いモニターでプレイするとプレイ時間が早回しになる不具合を修正しました。
+- Safariブラウザで文字の描画位置が１ピクセルずれている不具合を修正しました。
+- Object.create(null)で作成されたオブジェクトをセーブした場合、エラーになる不具合を修正しました。
+- ゲーム画面がフォーカスを失った際に、画面をタッチしたままの状態になる不具合を修正しました。
+- マップイベントをロングタッチしていると、二重にイベントを起動することがある不具合を修正しました。
+- Chrome 69において、ウィンドウの背景や中身が正しく表示されないことがある不具合を修正しました。
+- バージョン1.5.0以降、ニューゲーム時に遠景よりもマップの表示が一瞬だけ遅れる（遠景がちらつく）不具合を修正しました。
+- ゲームをプレイ中にユーザーエージェントをiOS Safariから他のものへ切り替えると画面が停止する不具合を修正しました。
+- 極稀に音声が聞こえているのにもかかわらずゲーム画面が動かなくなる不具合を修正しました。
+- その他に、プラグインを用いた際に不具合の原因となるコードをいくつか修正しました。
+
+# 今回のコミッター（コードを書いた人）
+
+- liply
+- くらむぼん
+- しぐれん
+- bungcip
+- wilfrem
+- 白
+- ruたん
+- サンシロ
+
+# 次回予告
+
+問．たかし君がギターを演奏すると、PC版のゲームでは0.5秒後に、スマホ版では5秒後に聞こえました。
+音の速さが340m/sだとすると、PC版とスマホ版の間の距離は何メートルでしょうか？
+
+答．どちらのゲームもあなたの目の前にありますが、音声の再生開始までに時間がかかっています。
+
+次回、「音を置き去りにしない！」お楽しみに！
+
+## 利用方法
+
+- 「index.html」「js」「fonts」を上書きしてください。
+ - この３種類をすべて上書きしないとエラーが出ます
+
+## pluginについて
+### 必要なときだけONにしてください
+
+- Debug_ThrottleImage.js
+ - デバッグ用途で、低速回線を再現するために画像読み込みを遅くします。
+- Debug_ReportMemory.js
+ - デバッグ用途で、利用中のメモリ量を表示します。
+ - 正常な動作の場合、一定量で増加が止まります。
+ - これが増加し続ける場合、ブラウザがクラッシュします。
+- Debug_FailLoading.js
+ - リトライ機能をテストするための読み込み失敗用のプラグイン。
+- Debug_HealthCheck.js
+ - コアスクリプトのファイルをすべて正しくコピーできているか確かめるヘルスチェックプラグイン
+- Community_Basic.js
+ - キャッシュ上限値や解像度、常時ダッシュの初期値などを設定できるベーシックプラグイン
+
+## 更新履歴
+- community-1.3　2018年12月17日
+ - http://blog.nicovideo.jp/atsumaru/download/community-13.html
+- community-1.2c　2017年5月17日
+ - http://blog.nicovideo.jp/atsumaru/download/community-12c.html
+- community-1.2b　2017年5月9日
+ - http://blog.nicovideo.jp/atsumaru/download/community-12b.html
+- community-1.2　2017年5月8日
+ - http://blog.nicovideo.jp/atsumaru/download/community-12.html
+- community-1.1b　2017年3月13日
+ - http://blog.nicovideo.jp/atsumaru/download/community-11b.html
+- community-1.1　2017年3月10日
+ - http://blog.nicovideo.jp/atsumaru/download/community-11.html
+
+-----------------------------------------------------------------------------------
+# English
+
+# RPGMakerMV corescript "community-1.3" Release Notes
+
+## Summary
+
+Hi, everyone.
+The community version corescript is back!
+We fixed many of bugs, and added new features such as autosave and loading bar.
+New features can be activated by the Community_Basic plugin.
+Enjoy new corescript!
+
+## Features
+
+- Add autosave when you move to another map.
+- Add a loading bar that displays loading status of images and sounds when switching to another scene.
+- Add detailed information (information of the event where the error occurred, line number, stack trace, etc.) when an error occurs.
+- Add changing text speed. Within the "Show text..." you can change the speed with \S[number], the higher the number the slower the speed (if 0, show all texts at once). You can also specify a default value using the Community_Basic plugin.
+
+You can enable (or disable) each of these features by Community_Basic plugin.
+
+## Improvements
+
+- Improve the efficiency of flushing images (such as enemy characters).
+- Improve the efficiency of processing to save and load games.
+- Several other points, the efficiency is improved.
+
+## Fixes
+
+- Fix the game does not work properly when deploying to Android app using Crosswalk.
+- Fix cannot save when playing the game deployed using Enigma Virtual Box.
+- Fix to prevent the game from stopping when an error occurs due to browser extension.
+- Fix cannot touch the retry button when loading error occurred on iOS.
+- Fix letters blurred when drawing smaller characters than 21px.
+- Fix an error when using an item without party member that can use items due to a bad status or the like.
+- Fix large characters (whose filename begins with $) are not rendered correctly in the window.
+- Fix loop tag of some ogg files cannot be read correctly.
+- Fix playing time fast-forwarded when playing on a monitor with a higher refresh rate.
+- Fix where the drawing position of letters is shifted by 1 pixel in Safari browser.
+- Fix an error when saving objects created with Object.create(null).
+- Fix keep touching when the game screen loses focus.
+- Fix double trigger events when long touching map events.
+- Fix the background and contents of the windows might not be displayed correctly on Chrome 69.
+- Fix rendering the map is delayed for a moment than the parallax at NewGame.
+- Fix the game freezes when user agent is changed from iOS Safari to another while playing the game.
+- Fix the game screen freezes despite sound being heard.
+- Several other points, fix some code that might cause the problem when using plugin.
+
+## Committers
+
+liply, krmbn0576, Sigureya, bungcip, wilfrem, white-mns, rutan, rev2nym
+
+# Trailer
+
+Question: When Takashi-kun played the guitar, it sounded 0.5 seconds later in the RMMV game for PC and 5 seconds later for smartphone.
+If the sound speed is 340 m/s, how many meters is the distance between the PC version and the smartphone version?
+
+Answer: Both games are in front of you, but it takes time to start playing the sound.
+
+Next time, "Overcome delaying of sounds!" Look forward to it!

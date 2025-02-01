@@ -1,0 +1,57 @@
+﻿# RPGツクールMV コアスクリプト
+
+## community-1.3b リリースノート (*English follows Japanese)
+
+# 不具合修正
+
+- オートセーブしたデータをロードした際に、移動前のマップのBGMが流れてしまう不具合を修正しました。
+- ゲームウィンドウを縮小した後に、スクロールバーが表示されてしまう不具合を修正しました。
+- Community_Basic.jsプラグインの「常時ダッシュ」の初期値に関して、以前のバージョンとの互換性を回復しました。
+
+## 利用方法
+
+- 「index.html」「js」「fonts」を上書きしてください。
+ - この３種類をすべて上書きしないとエラーが出ます
+
+## pluginについて
+### 必要なときだけONにしてください
+
+- Debug_ThrottleImage.js
+ - デバッグ用途で、低速回線を再現するために画像読み込みを遅くします。
+- Debug_ReportMemory.js
+ - デバッグ用途で、利用中のメモリ量を表示します。
+ - 正常な動作の場合、一定量で増加が止まります。
+ - これが増加し続ける場合、ブラウザがクラッシュします。
+- Debug_FailLoading.js
+ - リトライ機能をテストするための読み込み失敗用のプラグイン。
+- Debug_HealthCheck.js
+ - コアスクリプトのファイルをすべて正しくコピーできているか確かめるヘルスチェックプラグイン
+- Community_Basic.js
+ - キャッシュ上限値や解像度、常時ダッシュの初期値などを設定できるベーシックプラグイン
+
+## 更新履歴
+- community-1.3b　2019年1月7日
+ - http://blog.nicovideo.jp/atsumaru/download/community-13b.html
+- community-1.3　2018年12月17日
+ - http://blog.nicovideo.jp/atsumaru/download/community-13.html
+- community-1.2c　2017年5月17日
+ - http://blog.nicovideo.jp/atsumaru/download/community-12c.html
+- community-1.2b　2017年5月9日
+ - http://blog.nicovideo.jp/atsumaru/download/community-12b.html
+- community-1.2　2017年5月8日
+ - http://blog.nicovideo.jp/atsumaru/download/community-12.html
+- community-1.1b　2017年3月13日
+ - http://blog.nicovideo.jp/atsumaru/download/community-11b.html
+- community-1.1　2017年3月10日
+ - http://blog.nicovideo.jp/atsumaru/download/community-11.html
+
+-----------------------------------------------------------------------------------
+# English
+
+# RPGMakerMV corescript "community-1.3b" Release Notes
+
+## Fixes
+
+- Fix previous map bgm sounds after loading auto save data
+- Fix scroll bar showed after resize game window
+- Recover compatibility of the "alwaysDash" value of Community_Basic.js
