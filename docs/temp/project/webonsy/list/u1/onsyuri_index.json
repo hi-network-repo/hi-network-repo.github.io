@@ -3,7 +3,7 @@
   "gamedir": "/onsyuri/umineko_ep1",
   "savedir": "/onsyuri_save/umineko_ep1",
   "args": [
-    "--enc:utf-8"
+    "--enc:sjis"
   ],
   "lazyload": false,
   "files": [
