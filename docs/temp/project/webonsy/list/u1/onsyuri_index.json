@@ -2,7 +2,9 @@
   "title": "うみねこのなく頃に",
   "gamedir": "/onsyuri/umineko_ep1",
   "savedir": "/onsyuri_save/umineko_ep1",
-  "args": [],
+  "args": [
+    "--enc:utf-8"
+  ],
   "lazyload": false,
   "files": [
     {
