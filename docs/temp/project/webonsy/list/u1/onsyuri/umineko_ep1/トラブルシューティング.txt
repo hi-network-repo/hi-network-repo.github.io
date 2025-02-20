@@ -1,0 +1,21 @@
+◆DirectXについて
+
+　『うみねこのなく頃に』の動作には
+　Microsoft社のDirectX8.0a以降が必要です。
+　現在ご使用のDirectXのバージョンが古い場合は、
+　ゲームのインストール時に一緒にインストールして下さい。
+　（"DirectX"フォルダ内の"DXSETUP.EXE"を実行して下さい）
+　DirectXのバージョンは、DirectX8.0aです。
+
+それ以外の動作不良に関しては、当サークルサポート掲示板、もしくは
+以下のメールアドレスまでお寄せ下さい。
+
+07th Expansion公式サイト
+http://07th-expansion.net
+
+サポート掲示板　
+http://rena07.com/Cgi/cbbs_mxi/cbbs.cgi
+
+管理人メールアドレス
+bbs@07th-expansion.net
+

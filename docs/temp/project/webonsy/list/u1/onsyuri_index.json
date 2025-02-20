@@ -1,0 +1,669 @@
+{
+  "title": "ep1",
+  "gamedir": "/onsyuri/umineko_ep1",
+  "savedir": "/onsyuri_save/umineko_ep1",
+  "args": [],
+  "lazyload": false,
+  "files": [
+    {
+      "path": "onsyuri.html",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri.html"
+    },
+    {
+      "path": "onsyuri.js",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri.js"
+    },
+    {
+      "path": "onsyuri.wasm",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri.wasm"
+    },
+    {
+      "path": "onsyuri_index.json",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri_index.json"
+    },
+    {
+      "path": "onsyuri_index.py",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri_index.py"
+    },
+    {
+      "path": "r.txt",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/r.txt"
+    },
+    {
+      "path": "arc.nsa",
+      "url": "https://media.githubusercontent.com/media/Hikaru2070/ons_wasm.test/refs/heads/main/gf/u1/arc.nsa"
+    },
+    {
+      "path": "breakup.dll",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/breakup.dll"
+    },
+    {
+      "path": "cascade.dll",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/cascade.dll"
+    },
+    {
+      "path": "desktop.ini",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/desktop.ini"
+    },
+    {
+      "path": "instlog.txt",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/instlog.txt"
+    },
+    {
+      "path": "nscript.dat",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/nscript.dat"
+    },
+    {
+      "path": "nsogg.dll",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/nsogg.dll"
+    },
+    {
+      "path": "Read_me.txt",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/Read_me.txt"
+    },
+    {
+      "path": "snow.dll",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/snow.dll"
+    },
+    {
+      "path": "trvswave.dll",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/trvswave.dll"
+    },
+    {
+      "path": "whirl.dll",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/whirl.dll"
+    },
+    {
+      "path": "\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0.txt",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0.txt"
+    },
+    {
+      "path": "BGM/01 sample_u3.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/01 sample_u3.mp3"
+    },
+    {
+      "path": "BGM/02 sample_u4.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/02 sample_u4.mp3"
+    },
+    {
+      "path": "BGM/02_stupefaction.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/02_stupefaction.mp3"
+    },
+    {
+      "path": "BGM/03 sample_u5.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/03 sample_u5.mp3"
+    },
+    {
+      "path": "BGM/03_play.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/03_play.mp3"
+    },
+    {
+      "path": "BGM/04 \u697d\u66f2U_Sample\uff12\uff11.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/04 \u697d\u66f2U_Sample\uff12\uff11.mp3"
+    },
+    {
+      "path": "BGM/07 \u697d\u66f2Q_Sample\uff11\uff17.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/07 \u697d\u66f2Q_Sample\uff11\uff17.mp3"
+    },
+    {
+      "path": "BGM/07_voiceless.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/07_voiceless.mp3"
+    },
+    {
+      "path": "BGM/08 \u697d\u66f2T_Sample\uff12\uff10.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/08 \u697d\u66f2T_Sample\uff12\uff10.mp3"
+    },
+    {
+      "path": "BGM/08_deadangle.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/08_deadangle.mp3"
+    },
+    {
+      "path": "BGM/09 \u697d\u66f2C_Sample\uff13.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/09 \u697d\u66f2C_Sample\uff13.mp3"
+    },
+    {
+      "path": "BGM/09_suspicion.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/09_suspicion.mp3"
+    },
+    {
+      "path": "BGM/10 \u697d\u66f2H_Sample\uff18.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/10 \u697d\u66f2H_Sample\uff18.mp3"
+    },
+    {
+      "path": "BGM/10_witch_in_gold_cenba.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/10_witch_in_gold_cenba.mp3"
+    },
+    {
+      "path": "BGM/11a_worldend.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/11a_worldend.mp3"
+    },
+    {
+      "path": "BGM/11b_worldend_solo.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/11b_worldend_solo.mp3"
+    },
+    {
+      "path": "BGM/Closed My Heart.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/Closed My Heart.mp3"
+    },
+    {
+      "path": "BGM/Fortitude.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/Fortitude.mp3"
+    },
+    {
+      "path": "BGM/gc-01.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/gc-01.mp3"
+    },
+    {
+      "path": "BGM/HANE.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/HANE.mp3"
+    },
+    {
+      "path": "BGM/hope(Ver1.00).mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/hope(Ver1.00).mp3"
+    },
+    {
+      "path": "BGM/mind_2.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/mind_2.mp3"
+    },
+    {
+      "path": "BGM/minute darkness.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/minute darkness.mp3"
+    },
+    {
+      "path": "BGM/rahu_goldenslaughterer.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/rahu_goldenslaughterer.mp3"
+    },
+    {
+      "path": "BGM/Ride on\uff08\u98db\u884c\u6a5f\u306b\u4e57\u3063\u3066\u5cf6\u306b\u884c\u304f\u3068\u304d\u306e\u30a4\u30e1\u30fc\u30b8\uff09.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/Ride on\uff08\u98db\u884c\u6a5f\u306b\u4e57\u3063\u3066\u5cf6\u306b\u884c\u304f\u3068\u304d\u306e\u30a4\u30e1\u30fc\u30b8\uff09.mp3"
+    },
+    {
+      "path": "BGM/rougoku.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/rougoku.mp3"
+    },
+    {
+      "path": "BGM/sea.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/sea.mp3"
+    },
+    {
+      "path": "BGM/system0.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/system0.mp3"
+    },
+    {
+      "path": "BGM/Towering cloud in summer.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/Towering cloud in summer.mp3"
+    },
+    {
+      "path": "BGM/u2_nighteyes.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/u2_nighteyes.mp3"
+    },
+    {
+      "path": "BGM/UmiNeko C FINALMIX_01.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/UmiNeko C FINALMIX_01.mp3"
+    },
+    {
+      "path": "BGM/\u30aa\u30eb\u30ac\u30f3\u5c0f\u66f2_\u7b2c6\u5104\u756a_\u30cf\u77ed\u8abf.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u30aa\u30eb\u30ac\u30f3\u5c0f\u66f2_\u7b2c6\u5104\u756a_\u30cf\u77ed\u8abf.mp3"
+    },
+    {
+      "path": "BGM/\u554f\u3044\u8a70\u3081.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u554f\u3044\u8a70\u3081.mp3"
+    },
+    {
+      "path": "BGM/\u590f\u306e\u6249.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u590f\u306e\u6249.mp3"
+    },
+    {
+      "path": "BGM/\u6697\u95c7\u306e\u523b.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u6697\u95c7\u306e\u523b.mp3"
+    },
+    {
+      "path": "BGM/\u7149\u6c99\u56de\u5ecamu.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u7149\u6c99\u56de\u5ecamu.mp3"
+    },
+    {
+      "path": "BGM/\u72af\u884c\u306e\u4e88\u544a\u72b6\u8aad\u307f\u4e0a\u3052\uff08\u30e9\u30c3\u30af\u773c\u529b\uff09.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u72af\u884c\u306e\u4e88\u544a\u72b6\u8aad\u307f\u4e0a\u3052\uff08\u30e9\u30c3\u30af\u773c\u529b\uff09.mp3"
+    },
+    {
+      "path": "BGM/\u75d5\u97f3.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u75d5\u97f3.mp3"
+    },
+    {
+      "path": "BGM/\u767d\u3044\u5f71.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u767d\u3044\u5f71.mp3"
+    },
+    {
+      "path": "BGM/\u7d75\u753b\u306e\u9b54\u5973.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u7d75\u753b\u306e\u9b54\u5973.mp3"
+    },
+    {
+      "path": "BGM/\u8a98\u3044.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u8a98\u3044.mp3"
+    },
+    {
+      "path": "BGM/\u96a3\u6b7b\u3000mu.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\u96a3\u6b7b\u3000mu.mp3"
+    },
+    {
+      "path": "BGM/\uff32\uff45\uff51\uff55\uff49\uff45\uff4d.mp3",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/BGM/\uff32\uff45\uff51\uff55\uff49\uff45\uff4d.mp3"
+    },
+    {
+      "path": "ME/A1_03052.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A1_03052.WAV"
+    },
+    {
+      "path": "ME/A1_03055.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A1_03055.WAV"
+    },
+    {
+      "path": "ME/A1_12222.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A1_12222.WAV"
+    },
+    {
+      "path": "ME/A3_01005.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A3_01005.WAV"
+    },
+    {
+      "path": "ME/A3_02012.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A3_02012.WAV"
+    },
+    {
+      "path": "ME/A3_05045.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A3_05045.WAV"
+    },
+    {
+      "path": "ME/A3_05051.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A3_05051.WAV"
+    },
+    {
+      "path": "ME/A5_01033.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A5_01033.WAV"
+    },
+    {
+      "path": "ME/A5_14446.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/A5_14446.wav"
+    },
+    {
+      "path": "ME/flangefemale.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/flangefemale.wav"
+    },
+    {
+      "path": "ME/Rain4_Long.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/Rain4_Long.WAV"
+    },
+    {
+      "path": "ME/STORM2.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/STORM2.WAV"
+    },
+    {
+      "path": "ME/\u30dc\u30a4\u30e9\u30fc\u5ba4.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u30dc\u30a4\u30e9\u30fc\u5ba4.wav"
+    },
+    {
+      "path": "ME/\u4e0d\u601d\u8b70\u6642\u8a08.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u4e0d\u601d\u8b70\u6642\u8a08.wav"
+    },
+    {
+      "path": "ME/\u5d50_\u30d5\u30e9\u30f3\u30b8\u30e3\u30fc.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u5d50_\u30d5\u30e9\u30f3\u30b8\u30e3\u30fc.wav"
+    },
+    {
+      "path": "ME/\u6642\u8a08\u30d5\u30e9\u30f3\u30b8\u30e3\u30fc3.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u6642\u8a08\u30d5\u30e9\u30f3\u30b8\u30e3\u30fc3.wav"
+    },
+    {
+      "path": "ME/\u6642\u8a08\u30eb\u30fc\u30d7L4.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u6642\u8a08\u30eb\u30fc\u30d7L4.WAV"
+    },
+    {
+      "path": "ME/\u96e82.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u96e82.WAV"
+    },
+    {
+      "path": "ME/\u98a8\u30d5\u30e9\u30f3\u30b8\u30e3\u30fc1.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u98a8\u30d5\u30e9\u30f3\u30b8\u30e3\u30fc1.wav"
+    },
+    {
+      "path": "ME/\u9ed2\u96fb\u8a71_\u30d9\u30eb2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u9ed2\u96fb\u8a71_\u30d9\u30eb2.wav"
+    },
+    {
+      "path": "ME/\u9ed2\u96fb\u8a71_\u30d9\u30eb2_far.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/ME/\u9ed2\u96fb\u8a71_\u30d9\u30eb2_far.wav"
+    },
+    {
+      "path": "movie/umineko_op.mpg",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/movie/umineko_op.mpg"
+    },
+    {
+      "path": "movie/umineko_op2.avi",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/movie/umineko_op2.avi"
+    },
+    {
+      "path": "SE/01se_umi.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/01se_umi.wav"
+    },
+    {
+      "path": "SE/02se_umi.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/02se_umi.wav"
+    },
+    {
+      "path": "SE/03se_umi.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/03se_umi.wav"
+    },
+    {
+      "path": "SE/05_se_umi.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/05_se_umi.wav"
+    },
+    {
+      "path": "SE/07_se_umi.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/07_se_umi.wav"
+    },
+    {
+      "path": "SE/A1_07130.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_07130.WAV"
+    },
+    {
+      "path": "SE/A1_07131.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_07131.WAV"
+    },
+    {
+      "path": "SE/A1_07132.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_07132.WAV"
+    },
+    {
+      "path": "SE/A1_07133.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_07133.WAV"
+    },
+    {
+      "path": "SE/A1_16258.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_16258.WAV"
+    },
+    {
+      "path": "SE/A1_17270.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_17270.WAV"
+    },
+    {
+      "path": "SE/A1_21333.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A1_21333.WAV"
+    },
+    {
+      "path": "SE/A5_01023.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_01023.WAV"
+    },
+    {
+      "path": "SE/A5_01026.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_01026.WAV"
+    },
+    {
+      "path": "SE/A5_02047.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_02047.WAV"
+    },
+    {
+      "path": "SE/A5_04105.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_04105.WAV"
+    },
+    {
+      "path": "SE/A5_04107.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_04107.WAV"
+    },
+    {
+      "path": "SE/A5_04138.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_04138.WAV"
+    },
+    {
+      "path": "SE/A5_06196.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_06196.WAV"
+    },
+    {
+      "path": "SE/A5_07201.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_07201.WAV"
+    },
+    {
+      "path": "SE/A5_07202.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_07202.WAV"
+    },
+    {
+      "path": "SE/A5_07212.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_07212.WAV"
+    },
+    {
+      "path": "SE/A5_08234.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_08234.WAV"
+    },
+    {
+      "path": "SE/A5_08263.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_08263.WAV"
+    },
+    {
+      "path": "SE/A5_10315.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_10315.WAV"
+    },
+    {
+      "path": "SE/A5_10316.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_10316.WAV"
+    },
+    {
+      "path": "SE/A5_10317.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_10317.WAV"
+    },
+    {
+      "path": "SE/A5_14445.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A5_14445.WAV"
+    },
+    {
+      "path": "SE/A6_24636.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/A6_24636.WAV"
+    },
+    {
+      "path": "SE/ahaha.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/ahaha.wav"
+    },
+    {
+      "path": "SE/B1.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/B1.WAV"
+    },
+    {
+      "path": "SE/B5.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/B5.WAV"
+    },
+    {
+      "path": "SE/bell1.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/bell1.wav"
+    },
+    {
+      "path": "SE/clash.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/clash.wav"
+    },
+    {
+      "path": "SE/clock_grand_fathers3.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/clock_grand_fathers3.wav"
+    },
+    {
+      "path": "SE/horror.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/horror.wav"
+    },
+    {
+      "path": "SE/lowclick.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/lowclick.wav"
+    },
+    {
+      "path": "SE/raihuru3d.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/raihuru3d.wav"
+    },
+    {
+      "path": "SE/SE4.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/SE4.WAV"
+    },
+    {
+      "path": "SE/\u30aa\u30fc\u30c8\u30ed\u30c3\u30af5.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30aa\u30fc\u30c8\u30ed\u30c3\u30af5.wav"
+    },
+    {
+      "path": "SE/\u30af\u30b5\u30ea.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30af\u30b5\u30ea.WAV"
+    },
+    {
+      "path": "SE/\u30b7\u30e3\u30c3\u30bf\u30fc\u9589\u3058\u308b\uff1a\u6b8b\u97ff1.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30b7\u30e3\u30c3\u30bf\u30fc\u9589\u3058\u308b\uff1a\u6b8b\u97ff1.wav"
+    },
+    {
+      "path": "SE/\u30b7\u30e3\u30c3\u30bf\u30fc\uff1a\u6b8b\u97ff1.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30b7\u30e3\u30c3\u30bf\u30fc\uff1a\u6b8b\u97ff1.wav"
+    },
+    {
+      "path": "SE/\u30c6\u30ec\u30dd\u30fc\u30c81.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30c6\u30ec\u30dd\u30fc\u30c81.wav"
+    },
+    {
+      "path": "SE/\u30ce\u30c3\u30af2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30ce\u30c3\u30af2.wav"
+    },
+    {
+      "path": "SE/\u30ea\u30ed\u30fc\u30c9\u901f.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30ea\u30ed\u30fc\u30c9\u901f.WAV"
+    },
+    {
+      "path": "SE/\u30ea\u30ed\u30fc\u30c9\u9045.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u30ea\u30ed\u30fc\u30c9\u9045.wav"
+    },
+    {
+      "path": "SE/\u843d\u96f73.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u843d\u96f73.wav"
+    },
+    {
+      "path": "SE/\u88404.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u88404.wav"
+    },
+    {
+      "path": "SE/\u9060\u96f72.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u9060\u96f72.wav"
+    },
+    {
+      "path": "SE/\u91cd\u3044\u30c9\u30a2\u9589\u3081\u308b2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u91cd\u3044\u30c9\u30a2\u9589\u3081\u308b2.wav"
+    },
+    {
+      "path": "SE/\u91d1\u5c5e\u30d1\u30a4\u30d7\u3092\u53e9\u304f\u97f3.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u91d1\u5c5e\u30d1\u30a4\u30d7\u3092\u53e9\u304f\u97f3.wav"
+    },
+    {
+      "path": "SE/\u91d1\u5c5e\u30d1\u30a4\u30d7\u3092\u53e9\u304f\u97f3B.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u91d1\u5c5e\u30d1\u30a4\u30d7\u3092\u53e9\u304f\u97f3B.wav"
+    },
+    {
+      "path": "SE/\u91d1\u5c5e\u30d1\u30a4\u30d7\u3092\u53e9\u304f\u97f3C.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u91d1\u5c5e\u30d1\u30a4\u30d7\u3092\u53e9\u304f\u97f3C.wav"
+    },
+    {
+      "path": "SE/\u9248\u3092\u843d\u3068\u3057\u305f\u97f3.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u9248\u3092\u843d\u3068\u3057\u305f\u97f3.wav"
+    },
+    {
+      "path": "SE/\u9375\u675f2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u9375\u675f2.wav"
+    },
+    {
+      "path": "SE/\u96fb\u8a71_\u53d7\u8a71\u5668\u4e0a\u3052\u308b.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/SE/\u96fb\u8a71_\u53d7\u8a71\u5668\u4e0a\u3052\u308b.wav"
+    },
+    {
+      "path": "sys_se/2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/2.wav"
+    },
+    {
+      "path": "sys_se/clock_grand_fathers2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/clock_grand_fathers2.wav"
+    },
+    {
+      "path": "sys_se/clock_ticking.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/clock_ticking.wav"
+    },
+    {
+      "path": "sys_se/da_kane.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/da_kane.wav"
+    },
+    {
+      "path": "sys_se/da_kane2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/da_kane2.wav"
+    },
+    {
+      "path": "sys_se/KT1.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/KT1.wav"
+    },
+    {
+      "path": "sys_se/mizu_d.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/mizu_d.wav"
+    },
+    {
+      "path": "sys_se/mizu_d2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/mizu_d2.wav"
+    },
+    {
+      "path": "sys_se/mizu_ijou.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/mizu_ijou.wav"
+    },
+    {
+      "path": "sys_se/one_re.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/one_re.wav"
+    },
+    {
+      "path": "sys_se/page.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/page.wav"
+    },
+    {
+      "path": "sys_se/Z2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/Z2.wav"
+    },
+    {
+      "path": "sys_se/ZS1.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/ZS1.WAV"
+    },
+    {
+      "path": "sys_se/ZS2.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/ZS2.wav"
+    },
+    {
+      "path": "sys_se/ZS3.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/ZS3.wav"
+    },
+    {
+      "path": "sys_se/ZS4.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/ZS4.wav"
+    },
+    {
+      "path": "sys_se/ZS5.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/ZS5.wav"
+    },
+    {
+      "path": "sys_se/ZS6.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/ZS6.wav"
+    },
+    {
+      "path": "sys_se/zyosys1.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/zyosys1.WAV"
+    },
+    {
+      "path": "sys_se/zyosys3.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/zyosys3.WAV"
+    },
+    {
+      "path": "sys_se/zyosys7.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/zyosys7.WAV"
+    },
+    {
+      "path": "sys_se/\u30cd\u30b8.wav",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/\u30cd\u30b8.wav"
+    },
+    {
+      "path": "sys_se/\u67f1\u6642\u8a08\u306e\u9418.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/\u67f1\u6642\u8a08\u306e\u9418.WAV"
+    },
+    {
+      "path": "sys_se/\u67f1\u6642\u8a08\u306e\u94182.WAV",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/sys_se/\u67f1\u6642\u8a08\u306e\u94182.WAV"
+    }
+  ]
+}
