@@ -1,10 +1,14 @@
 {
-  "title": "ep1",
+  "title": "うみねこのなく頃に",
   "gamedir": "/onsyuri/umineko_ep1",
   "savedir": "/onsyuri_save/umineko_ep1",
   "args": [],
   "lazyload": false,
   "files": [
+    {
+      "path": "arc.nsa",
+      "url": "https://media.githubusercontent.com/media/Hikaru2070/ons_wasm.test/refs/heads/main/gf/u1/arc.nsa"
+    },
     {
       "path": "onsyuri.html",
       "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri.html"
@@ -16,6 +20,10 @@
     {
       "path": "onsyuri.wasm",
       "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri.wasm"
+    },
+    {
+      "path": "onsyuri_index - \u30b3\u30d4\u30fc.json",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri_index - \u30b3\u30d4\u30fc.json"
     },
     {
       "path": "onsyuri_index.json",
@@ -30,16 +38,16 @@
       "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/r.txt"
     },
     {
-      "path": "arc.nsa",
-      "url": "https://media.githubusercontent.com/media/Hikaru2070/ons_wasm.test/refs/heads/main/gf/u1/arc.nsa"
-    },
-    {
       "path": "breakup.dll",
       "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/breakup.dll"
     },
     {
       "path": "cascade.dll",
       "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/cascade.dll"
+    },
+    {
+      "path": "default.ttf",
+      "url": "https://go-boat.f5.si/temp/project/webonsy/list/u1/onsyuri/umineko_ep1/default.ttf"
     },
     {
       "path": "desktop.ini",
