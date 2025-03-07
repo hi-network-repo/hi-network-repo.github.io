@@ -12,7 +12,7 @@ show_author: true
 **11月2日の釣果**
 <br>
 今日の釣果は…  
-![20241102firp](https://file203-d.kuku.lu/files/20250307-1438_9899dda819eb7498dce6c6b599b67334.jpg "2024/11/02の釣果")
+![20241102firp](https://raw.githubusercontent.com/hi-network-repo/assets/refs/heads/main/hi-network-repo.github.io/assets/image/IMG_3981.jpg "2024/11/02の釣果")
 
 
 

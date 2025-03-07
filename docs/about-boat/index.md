@@ -2,7 +2,7 @@
 title: 船について
 subtitle: About boat
 header_type: image
-header_img: "https://drive.google.com/file/d/1avIaRmVgVKHJHbLYrdrTUGTnYfeNgZhk/preview"
+header_img: "https://raw.githubusercontent.com/hi-network-repo/assets/refs/heads/main/hi-network-repo.github.io/assets/image/IMG_3308.JPG"
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
 norobots: true
