@@ -21,5 +21,4 @@ norobots: true
 
 Introuction
 
-{% include snippets/video.html fileurl="https://s3.ap-northeast-1-ntt.wasabisys.com/ak1520d-filenow-1/files/20241120-2218_1b94d3b64139b71a259adb64142b416f.mp4?response-content-disposition=attachment" %}
-
+<iframe src="https://drive.google.com/file/d/1sMLdLAfUfnBDIVJLTzBPKiystm0mzOgf/preview" width="640" height="480" allow="autoplay"></iframe>
