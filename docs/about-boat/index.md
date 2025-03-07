@@ -2,7 +2,7 @@
 title: 船について
 subtitle: About boat
 header_type: image
-header_img: "https://file203-d.kuku.lu/files/20250307-1438_c90eb718a02a4f9f99d66c720ecc6c30.jpg"
+header_img: "https://drive.google.com/file/d/1avIaRmVgVKHJHbLYrdrTUGTnYfeNgZhk/preview"
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
 norobots: true
