@@ -5,7 +5,7 @@ excerpt: About point2
 show_toc: true
 norobots: true
 ---
-<img src="https://dsm04pap002files.storage.live.com/y4myko4GFNTRR5bNg3ufni5pdtLK0rzKu1j5nFBVYuk13b8zn9tD6G2m_Ql2mkng3cCfCSUeQdKbmYtst_Gq1lb-waEhE7q83kFwHdsBX57CqRI5zl9QgdgzBx2vvcZVc30bCm2zbXbhex6xUeKu8inbBV3JYrCw2BS4qg-nmAavJvYQ4dxe8fP5XogE2ErQDaCtuHf0IjnO0jxn79laHePpA?encodeFailures=1&width=610&height=855">
+<img src="https://file203-d.kuku.lu/files/20250307-1438_51d08b9a58c89762e33b670df6e4e6ba.jpg">
 
 釣行時間　日の出から昼頃まで。 
 

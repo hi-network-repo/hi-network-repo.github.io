@@ -4,7 +4,7 @@ title: '<span class="chulapa">⚠重要⚠</span>'
 subtitle: important
 excerpt: important
 header_type: splash
-header_img: "https://dsm04pap002files.storage.live.com/y4mVPpJ6YmtONX1Ygj0y-BkNJOLSN83lCXueLeunvNSWF4dbNiTQ32z4_zo2GlORDB-tgUkYhQWklOGqcex1qEV8g1X2QOlhmhkbVjQCcwhHfYWzLacUUAKmSRGi9pLdclNYc40ReYqUYMIlcpvV3RG0I0_tPOI4mHpfl8lzKgA0UZQ4FuUX6EvGZBO7xvGsqbs1rmDcwKdY5bX9aQwFvyNXw?encodeFailures=1&width=1520&height=855"
+header_img: "https://file203-d.kuku.lu/files/20250307-1438_aaacc7f3fd39601f6452af003a302e53.jpg"
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
 show_sociallinks: false
@@ -35,4 +35,3 @@ norobots: true
 
 釣行に参加した時点で，上記の内容に同意したことになります。
 
-<!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191665701"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191665701" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191665701" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="6.5" height="3.5"> </span></noscript><!--shinobi2-->

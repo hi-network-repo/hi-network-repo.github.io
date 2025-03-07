@@ -2,7 +2,7 @@
 title: 船について
 subtitle: About boat
 header_type: image
-header_img: "https://dsm04pap002files.storage.live.com/y4mcwmcJH8zKzNykpaiM0kPf_ftj09x7wA_SGAq1pH7OA5mAeLIYrO6hW72fkpGJw71GupdKvUbo6OBOJF151F0AvHn9FwSuXFfFE1bH2ISPN9-_CG9jzqXk5MIYvsG4D7XFjbupjtrP3skxWUMvqNAeBdvtIZmsM5K0-Rcqle2dgfBIFvn8SFy9_GgXJuuNkXpeD228XjKoerdIrM-e8HtAw?encodeFailures=1&width=1668&height=848"
+header_img: "https://file203-d.kuku.lu/files/20250307-1438_c90eb718a02a4f9f99d66c720ecc6c30.jpg"
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
 norobots: true
