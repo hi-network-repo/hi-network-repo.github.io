@@ -1,0 +1,227 @@
+remote_theme: dieghernan/chulapa
+
+
+title: 釣り行こまい！
+subtitle: Go by boat
+description: Go by boat
+og_image: "./assets/img/site/bn.png"
+timezone: Asia/Tokyo
+author:
+  name: 釣り行こまい！
+  avatar: ./assets/img/site/bn.png
+  location: Aichi, Japan
+gtag_id: G-D4B755RMBS
+search:
+  provider: algolia
+  algolia_logo: true
+algolia:
+  application_id        : "71SN4DFM3D"
+  index_name            : "my-site-and-blog"
+  search_only_api_key   : "95ec6d2dfb8950d622728aefafc079a2"
+  files_to_exclude:         #Optional
+    - _layouts/*.html
+    - _includes/*.html
+    - _pages/liquid*
+  extensions_to_index:      #Optional
+    - html
+    - md
+  searchableAttributes:     #Optional
+    - title
+    - headings
+    - unordered(content)
+    - unordered(subtitle)
+    - unordered(categories)
+    - unordered(collection)
+    - unordered(tags)
+  customRanking:            #Optional
+    - desc(include_on_search)
+    - desc(title)
+    - desc(content)
+    - desc(subtitle)
+
+# B. Navigation
+navbar:
+  style :  fab
+  brand:
+    title :  ホーム
+    img: "./assets/img/site/bn.png"
+    url: /
+  nav:
+  - title: "⚠重要⚠"
+    url: /catution/
+  - title: "船について"
+    url: /about-boat/
+  - title: "ポイント①について"
+    url: /about-point/
+  - title: "ポイント②について"
+    url: /about-point2/
+  - title: "天気予報などなど"
+    url: /fishing/
+  - title: "持ち物"
+    url:  /packing-list/
+  - title: "集合について"
+    url: /about-meeting-place/
+  - title: "釣果報告(当日に更新します)"
+    url: /fishing-report
+  - title: "このサイトについて"
+    url: /about-this-site/
+  - title: "LINE公式を友達登録"
+    icon: "fab fa-line"
+    url: "https://lin.ee/60dSS5n"
+footer:
+  links: 
+    - label: "LINE"
+      icon: "fab fa-line"
+      url:  "https://lin.ee/qbgIW72"
+  copyright: "&copy; 2024 Hikaru & Makoto, other..."
+
+# C. Theme Settings
+chulapa-skin:
+  highlight   : "github"
+  skin        : gitdev
+  autothemer  :  true
+
+# D. Jekyll Defaults and collections: see https://jekyllrb.com/
+collections:
+  fishing-report:
+    output: true
+    permalink : /fishing-report/:year:month:day_:title
+collections_dir     : collections
+permalink           : /:year:month:day_:title
+paginate: 4
+paginate_path: "/blog/page:num/"
+paginator_maxnum: 3
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type         : "base"
+      include_on_search   : false
+      cloudtag_url        : "/tags"
+      cloudcategory_url   : "/categories"
+      show_seo            : true
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      header_type       : "hero"
+      show_sidetoc      : true
+      include_on_search : true
+      show_bottomnavs   : true
+      show_comments     : true
+      show_breadcrumb   : true
+      show_applause     : true
+      og_image: "/assets/img/site/banner-docs.png"
+      breadcrumb_list   :
+        - label: Home
+          url: /
+        - label: Docs
+          url: /docs
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header_type       : "post"
+      include_on_search : true
+      include_on_feed   : true
+      show_date         : true
+      show_related      : true
+      show_bottomnavs   : true
+      show_sociallinks  : true
+      show_comments     : true
+      show_tags         : true
+      show_categories   : true
+      show_author       : true
+      show_breadcrumb   : true
+      breadcrumb_list   :
+        - label: Blog
+          url: /blog/
+  -
+    scope:
+      path: ""
+      type: "skins"
+    values:
+      header_type       : "splash"
+      cloudtag_url      : "/demo/tags"
+      og_image          : '/assets/img/site/banner-skins.png'
+      include_on_search : true
+      show_date         : true
+      show_sociallinks  : true
+      show_comments     : true
+      show_tags         : true
+      show_categories   : true
+      show_related      : true
+      show_bottomnavs   : true
+      show_author       : true
+      show_toc          : true
+      show_sidetoc      : true
+      show_breadcrumb   : true
+      show_seo          : false
+      show_applause     : true
+      breadcrumb_list   :
+        - label: Skins
+          url: /skins
+  -
+    scope:
+      path: ""
+      type: "demo"
+    values:
+      layout            : "default"
+      header_type       : "base"
+      cloudtag_url      : "/demo/tags"
+      og_image          : '/assets/img/site/banner-demos.png'
+      include_on_search : true
+      cloudcategory_url : "/demo/category"
+      show_breadcrumb   : true
+      breadcrumb_list   :
+        - label: Demo
+          url: /demo
+  -
+    scope:
+      path: "assets/img/gallery"
+    values:
+      image_col         : gallery
+
+# XX. Other settings - no need to modify
+compress_html:
+  clippings: all
+  blanklines: true
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-redirect-from
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor
+  - www_src
+include:
+ - _pages
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  footnote_backlink: '&uarr;'
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+default_lang: 'ja'

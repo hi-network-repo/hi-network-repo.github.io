@@ -1,5 +1,11 @@
+github: [metadata]
+
 remote_theme: dieghernan/chulapa
 
+
+repository: hi-network-repo
+url: "https://go-boat.f5.si"
+baseurl: "/"
 
 title: 釣り行こまい！
 subtitle: Go by boat
@@ -39,6 +45,8 @@ algolia:
     - desc(content)
     - desc(subtitle)
 
+google_cse_id: 002514516175957445995:tvgnhtemtbu
+
 # B. Navigation
 navbar:
   style :  fab
@@ -75,10 +83,11 @@ footer:
       url:  "https://lin.ee/qbgIW72"
   copyright: "&copy; 2024 Hikaru & Makoto, other..."
 
+
 # C. Theme Settings
 chulapa-skin:
-  highlight   : "github"
-  skin        : gitdev
+  highlight   : "vs"
+  skin        : navi
   autothemer  :  true
 
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
@@ -113,7 +122,6 @@ defaults:
       show_bottomnavs   : true
       show_comments     : true
       show_breadcrumb   : true
-      show_applause     : true
       og_image: "/assets/img/site/banner-docs.png"
       breadcrumb_list   :
         - label: Home
@@ -154,14 +162,16 @@ defaults:
       show_comments     : true
       show_tags         : true
       show_categories   : true
-      show_related      : true
+      show_related      : true 
+      related_label     : '<p><i class="fa-solid fa-right-left"></i></p>'
+      show_random       : true 
+      random_label      : '<p><i class="fa-solid fa-shuffle"></i></p>'
       show_bottomnavs   : true
       show_author       : true
       show_toc          : true
       show_sidetoc      : true
       show_breadcrumb   : true
       show_seo          : false
-      show_applause     : true
       breadcrumb_list   :
         - label: Skins
           url: /skins
@@ -195,7 +205,7 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-redirect-from
+  - jekyll-remote-theme
 exclude:
   - LICENSE
   - README.md
@@ -223,5 +233,14 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - mixed-decls
+    - abs-percent
+    - function-units
+    - color-functions
 
 default_lang: 'ja'
