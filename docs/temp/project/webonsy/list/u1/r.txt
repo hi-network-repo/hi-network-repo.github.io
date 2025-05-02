@@ -1,1 +1,0 @@
-python onsyuri_index.py --gamedir /onsyuri/umineko_ep1 --savedir /onsyuri_save/umineko_ep1 --urlbase https://go-boat.f5.si/temp/project/webonsy/list/u1/
