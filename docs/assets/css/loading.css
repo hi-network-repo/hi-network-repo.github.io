@@ -1,6 +1,7 @@
 #loading {
   width: 100vw;
   height: 100vh;
+  margin-left: calc(50% – 50vw);
   transition: all 1s;
   background-color: #23262e;
   position: fixed;
