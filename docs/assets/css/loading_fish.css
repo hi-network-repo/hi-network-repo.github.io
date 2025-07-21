@@ -10,6 +10,9 @@
   z-index: 9999;
 }
 .spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
   animation: rotate 1.0s infinite linear;
 }
 /* Loading Animation */
