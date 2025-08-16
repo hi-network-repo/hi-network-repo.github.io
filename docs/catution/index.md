@@ -4,7 +4,7 @@ title: '<span class="chulapa">⚠重要⚠</span>'
 subtitle: important
 excerpt: important
 header_type: splash
-header_img: "https://assets-cdn-my-site-20230410.pages.dev/hi-network-repo.github.io/assets/image/23734955.jpg"
+header_img: "https://xs572728.xsrv.jp/fishing_site/assets/site_image/23734955.jpg"
 og_image: "./assets/img/site/bn.png"
 include_on_search: true
 show_sociallinks: false

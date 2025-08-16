@@ -11,7 +11,7 @@ show_author: true
 ---
 **10月10日の釣果**
 <br>
-![20241010firp](https://assets-cdn-my-site-20230410.pages.dev/hi-network-repo.github.io/assets/image/IMG_6161.jpg "2024/10/10の釣果")
+![20241010firp](https://xs572728.xsrv.jp/fishing_site/assets/site_image/IMG_6161.jpg "2024/10/10の釣果")
 
 
 
