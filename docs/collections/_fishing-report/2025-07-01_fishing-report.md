@@ -1,6 +1,6 @@
 ---
 title: "7月1日の釣果"
-categories: [fishig-report]
+categories: [fishing-report]
 header_type: post
 tags: ["釣果","釣果報告","船"]
 date: 2025-07-01

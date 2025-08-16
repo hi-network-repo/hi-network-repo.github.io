@@ -1,6 +1,6 @@
 ---
 title: "10月11日の釣果"
-categories: [fishig-report]
+categories: [fishing-report]
 header_type: post
 tags: ["釣果","釣果報告","船"]
 date: 2024-10-11
