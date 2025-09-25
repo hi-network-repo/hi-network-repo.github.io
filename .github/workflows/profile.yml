@@ -15,14 +15,13 @@ jobs:
     - uses: actions/checkout@v4
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6
         bundler-cache: true
-        working-directory: 'docs'
+        ruby-version: '3.4' # Not needed with a .ruby-version file
+
        
     - name: Run jekyll-profile
       run: |
         # Run Jekyll Profile
-        cd  docs
         # Bundle install
         echo "::group::Jekyll folder"
         echo "Building Jekyll from: $PWD"
@@ -34,5 +33,12 @@ jobs:
         # Jekyll Profile
         echo "::group::Jekyll Profile"
         bundle exec jekyll build --incremental --profile >> $GITHUB_STEP_SUMMARY
+        echo "::endgroup::"
+        # Nice formatting
+        echo "::group::Format job summary"
+        sed -i 's/+-/|/g' $GITHUB_STEP_SUMMARY
+                sed -i 's/-+/|/g' $GITHUB_STEP_SUMMARY
+        sed -i 's/Build Process Summary/## Build Process Summary/g' $GITHUB_STEP_SUMMARY
+        sed -i 's/Site Render Stats/## Site Render Stats/g' $GITHUB_STEP_SUMMARY
         echo "::endgroup::"
       shell: bash
