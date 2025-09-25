@@ -12,7 +12,7 @@ show_author: true
 **10月11日の釣果**
 <br>
 今日の釣果は…  
-![20250701firp](https://cf684707.cloudfree.jp/nxcd/index.php/apps/files_sharing/publicpreview/9dzKmpGokGnjekD?file=/&fileId=243&x=1680&y=1050&a=true&etag=0be4e4e9724546f88e562e631365f5e7 "2025/07/01の釣果")
+![20250701firp](https://cf684707.cloudfree.jp/go-by-boat/other/IMG_5664.jpeg "2025/07/01の釣果")
 
 
 

@@ -5,7 +5,7 @@ excerpt: About point
 show_toc: true
 norobots: true
 ---
-<img src="https://assets-cdn-my-site-20230410.pages.dev/hi-network-repo.github.io/assets/image/IMG_3301.PNG">
+<img src="https://cf684707.cloudfree.jp/go-by-boat/other/IMG_3301.PNG">
 
 釣行時間　日の出から昼頃まで。 
 
