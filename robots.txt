@@ -1,1 +1,1 @@
-Sitemap: http://hi-network-repo.github.io/sitemap.xml
+Sitemap: http://s.go-boat.f5.si/sitemap.xml
