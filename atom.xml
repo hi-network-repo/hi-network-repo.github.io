@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="http://s.go-boat.f5.si/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="http://s.go-boat.f5.si/" rel="alternate" type="text/html" />
-	<updated>2025-09-25T20:16:11+09:00</updated>
+	<updated>2025-09-25T20:21:43+09:00</updated>
 	<id>http://s.go-boat.f5.si/atom.xml</id>
 	<title>釣り行こまい！ | Go by boat</title>
 	<subtitle>Go by boat</subtitle>
@@ -12,5 +12,5 @@
 					
 	</author>
 	<rights>(c) 2025, 釣り行こまい！</rights>
-	<icon>https://hi-network-repo.github.io/go-by-boat/assets/img/site/bn.png</icon>
-	<logo>https://hi-network-repo.github.io/go-by-boat/assets/img/site/bn.png</logo></feed>
+	<icon>https://s.go-boat.f5.si/assets/img/site/bn.png</icon>
+	<logo>https://s.go-boat.f5.si/assets/img/site/bn.png</logo></feed>

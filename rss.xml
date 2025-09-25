@@ -7,14 +7,14 @@
 		<description>Go by boat</description>
 		<language>en-US</language>
 		<copyright>(c) 2025, 釣り行こまい！</copyright>	
-		<pubDate>Thu, 25 Sep 2025 20:16:11 +0900</pubDate>
-		<lastBuildDate>Thu, 25 Sep 2025 20:16:11 +0900</lastBuildDate>
+		<pubDate>Thu, 25 Sep 2025 20:21:43 +0900</pubDate>
+		<lastBuildDate>Thu, 25 Sep 2025 20:21:43 +0900</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="http://s.go-boat.f5.si/rss.xml" rel="self" type="application/rss+xml" />
 		<image>
 			<title>釣り行こまい！ | Go by boat</title>
-			<url>https://hi-network-repo.github.io/go-by-boat/assets/img/site/bn.png</url>
+			<url>https://s.go-boat.f5.si/assets/img/site/bn.png</url>
 			<link>http://s.go-boat.f5.si/</link>
 			<description>Go by boat</description>
 		</image></channel>
