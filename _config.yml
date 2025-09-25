@@ -5,11 +5,11 @@ repository: hi-network-repo/go-by-boat
 title: 釣り行こまい！
 subtitle: Go by boat
 description: Go by boat
-og_image: "https://hi-network-repo.github.io/go-by-boat/assets/img/site/bn.png"
+og_image: "https://s.go-boat.f5.si/assets/img/site/bn.png"
 timezone: Asia/Tokyo
 author:
   name: 釣り行こまい！
-  avatar: "https://hi-network-repo.github.io/go-by-boat//assets/img/site/bn.png"
+  avatar: "https://s.go-boat.f5.si/assets/img/site/bn.png"
   location: Aichi, Japan
 gtag_id: G-D4B755RMBS
 search:
@@ -45,7 +45,7 @@ navbar:
   style :  fab
   brand:
     title :  ホーム
-    img: "https://hi-network-repo.github.io/go-by-boat/assets/img/site/bn.png"
+    img: "https://s.go-boat.f5.si/assets/img/site/bn.png"
     url: /
   nav:
   - title: "⚠重要⚠"
@@ -115,7 +115,7 @@ defaults:
       show_comments     : true
       show_breadcrumb   : true
       show_applause     : true
-      og_image: "https://hi-network-repo.github.io/go-by-boat/assets/img/site/banner-docs.png"
+      og_image: "https://s.go-boat.f5.si/assets/img/site/banner-docs.png"
       breadcrumb_list   :
         - label: Home
           url: /
@@ -148,7 +148,7 @@ defaults:
     values:
       header_type       : "splash"
       cloudtag_url      : "/demo/tags"
-      og_image          : 'https://hi-network-repo.github.io/go-by-boat/assets/img/site/banner-skins.png'
+      og_image          : 'https://s.go-boat.f5.si/assets/img/site/banner-skins.png'
       include_on_search : true
       show_date         : true
       show_sociallinks  : true
@@ -174,7 +174,7 @@ defaults:
       layout            : "default"
       header_type       : "base"
       cloudtag_url      : "/demo/tags"
-      og_image          : 'https://hi-network-repo.github.io/go-by-boat/assets/img/site/banner-demos.png'
+      og_image          : 'https://s.go-boat.f5.si/assets/img/site/banner-demos.png'
       include_on_search : true
       cloudcategory_url : "/demo/category"
       show_breadcrumb   : true
