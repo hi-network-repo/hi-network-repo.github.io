@@ -19,7 +19,6 @@ norobots: true
 
 - ライフジャケット有り
 
-Introuction
-<iframe src="https://drive.google.com/file/d/1sMLdLAfUfnBDIVJLTzBPKiystm0mzOgf/preview" width="100%" allow="autoplay"></iframe>
+Introduction
 
 {% include snippets/video.html fileurl="https://cf684707.cloudfree.jp/go-by-boat/other/about-boat.MP4" %}

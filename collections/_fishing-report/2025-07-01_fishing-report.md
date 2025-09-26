@@ -9,7 +9,7 @@ show_tags         : true
 show_categories   : true
 show_author: true
 ---
-**10月11日の釣果**
+**7月1日の釣果**
 <br>
 今日の釣果は…  
 ![20250701firp](https://cf684707.cloudfree.jp/go-by-boat/other/IMG_5664.jpeg "2025/07/01の釣果")
