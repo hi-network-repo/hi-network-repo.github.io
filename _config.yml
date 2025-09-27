@@ -79,7 +79,8 @@ footer:
 # C. Theme Settings
 chulapa-skin:
   highlight   : "vs"
-  skin        : gitdev-dark
+  skin        : gitdev
+
   autothemer  :  true
 
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
@@ -226,4 +227,5 @@ sass:
   style: compressed
 
 default_lang: 'ja'
+
 
