@@ -14,8 +14,11 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "タイトル", name: "title", widget: "string" }
       - { label: "カテゴリー", name: "categories", widget: "select", options: [ { label: "釣果報告", value: "fishig-report" } ] }
-      - { label: "タイプ", name: "header_type", widget: "select", options: [ { label: "ポスト", value: "post" } ] }
+      - { label: "レイアウトテンプレート", name: "header_type", widget: "hidden", default: "post"}
       - { label: "タグ", name: "tags", widget: "select", multiple: true, min: 1, max: 3, options: ["釣果", "釣果報告", "船"], default: ["釣果"] }
       - { label: "掲載日", name: "date", widget: "datetime" }
-      - { label: "写真など...", name: "thumbnail", widget: "image" }
+      - { label: "日付を表示", name: "show_date", widget: "boolean", default: true}
+      - { label: "タグを表示", name: "show_tags", widget: "boolean", default: true}
+      - { label: "カテゴリーを表示", name: "show_categories", widget: "boolean", default: true}
+      - { label: "著者名を表示", name: "show_author", widget: "boolean", default: true}
       - { label: "本文", name: "body", widget: "markdown" }
