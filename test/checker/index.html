@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Map Checkmarker (GSI Pale)</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background: #eee;
+        }
+
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        .btn {
+            background-color: #57606f;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.1s ease, background-color 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .btn:hover {
+            background-color: #747d8c;
+        }
+        
+        .btn-loc {
+            background-color: #3742fa;
+        }
+        .btn-loc:hover {
+            background-color: #535cff;
+        }
+
+        .status {
+            font-size: 12px;
+            color: #333;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+
+        .checkmark-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border: none;
+        }
+
+        .checkmark-body {
+            font-size: 32px;
+            filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.3));
+            cursor: pointer;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            user-select: none;
+        }
+
+        .checkmark-body:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.4));
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            80% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        .marker-anim {
+            animation: popIn 0.4s ease-out forwards;
+        }
+        
+        .leaflet-control-attribution {
+            background: rgba(255,255,255,0.8) !important;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(55, 66, 250, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(55, 66, 250, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(55, 66, 250, 0); }
+        }
+        .current-location-marker {
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button class="btn btn-loc" id="btn-gps" onclick="getCurrentLocation()">現在地</button>
+        <span class="status" id="count-display">0 個</span>
+        <button class="btn" onclick="clearAllMarkers()">全て削除</button>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+        // --- 設定 (LocalStorageキー) ---
+        const STORAGE_KEY_MARKERS = 'map_checkmarks_v2';
+        const STORAGE_KEY_POSITION = 'map_position_v2';
+        
+        // デフォルト: 広島駅周辺
+        const DEFAULT_LAT = 34.3976;
+        const DEFAULT_LNG = 132.4753;
+        const DEFAULT_ZOOM = 14;
+
+        // --- 地図初期化 ---
+        // まず地図インスタンスを作成（表示位置は後で設定）
+        const map = L.map('map', {
+            zoomControl: false
+        });
+
+        // 位置情報の復元を試みる
+        const savedPosJson = localStorage.getItem(STORAGE_KEY_POSITION);
+        if (savedPosJson) {
+            try {
+                const pos = JSON.parse(savedPosJson);
+                map.setView([pos.lat, pos.lng], pos.zoom);
+            } catch (e) {
+                console.error("位置情報の復元に失敗", e);
+                map.setView([DEFAULT_LAT, DEFAULT_LNG], DEFAULT_ZOOM);
+            }
+        } else {
+            map.setView([DEFAULT_LAT, DEFAULT_LNG], DEFAULT_ZOOM);
+        }
+
+        L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>',
+            maxZoom: 18
+        }).addTo(map);
+
+        L.control.zoom({
+            position: 'bottomright'
+        }).addTo(map);
+
+        let markers = [];
+        let currentLocationMarker = null;
+
+        // --- アイコン定義 ---
+        const checkIcon = L.divIcon({
+            className: 'checkmark-icon',
+            html: '<div class="checkmark-body marker-anim">✅</div>',
+            iconSize: [40, 40],
+            iconAnchor: [20, 35]
+        });
+
+        // --- マーカー関数 ---
+
+        function addMarker(lat, lng, save = true) {
+            const marker = L.marker([lat, lng], { icon: checkIcon }).addTo(map);
+
+            marker.on('click', function() {
+                map.removeLayer(marker);
+                markers = markers.filter(m => m !== marker);
+                saveMarkers();
+                updateCount();
+            });
+
+            marker._lat = lat;
+            marker._lng = lng;
+            markers.push(marker);
+
+            if (save) {
+                saveMarkers();
+            }
+            updateCount();
+        }
+
+        // --- データ保存/復元 (LocalStorage) ---
+
+        function saveMarkers() {
+            const coords = markers.map(m => ({
+                lat: m._lat,
+                lng: m._lng
+            }));
+            try {
+                localStorage.setItem(STORAGE_KEY_MARKERS, JSON.stringify(coords));
+            } catch (e) {
+                console.error("保存できませんでした（容量オーバーなどの可能性があります）", e);
+            }
+        }
+
+        function loadMarkers() {
+            const jsonStr = localStorage.getItem(STORAGE_KEY_MARKERS);
+            if (jsonStr) {
+                try {
+                    const coords = JSON.parse(jsonStr);
+                    if (Array.isArray(coords)) {
+                        coords.forEach(coord => {
+                            addMarker(coord.lat, coord.lng, false);
+                        });
+                    }
+                } catch (e) {
+                    console.error("マーカーデータの読み込みエラー", e);
+                }
+            }
+            updateCount();
+        }
+        
+        // --- 地図位置の保存 ---
+        function saveMapPosition() {
+            const center = map.getCenter();
+            const zoom = map.getZoom();
+            const positionData = {
+                lat: center.lat,
+                lng: center.lng,
+                zoom: zoom
+            };
+            localStorage.setItem(STORAGE_KEY_POSITION, JSON.stringify(positionData));
+        }
+
+        function clearAllMarkers() {
+            if (!confirm("全てのチェックマークを削除しますか？")) return;
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+            localStorage.removeItem(STORAGE_KEY_MARKERS);
+            updateCount();
+        }
+
+        function updateCount() {
+            document.getElementById('count-display').innerText = `${markers.length} 個`;
+        }
+
+        // --- 位置情報取得 ---
+        
+        function getCurrentLocation() {
+            if (!navigator.geolocation) {
+                alert("お使いのブラウザは位置情報をサポートしていません。");
+                return;
+            }
+
+            const btn = document.getElementById('btn-gps');
+            const originalText = btn.innerText;
+            btn.innerText = "取得中...";
+            btn.disabled = true;
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    
+                    // 地図を移動 (アニメーション付き)
+                    map.setView([lat, lng], 16);
+                    // 位置情報を保存（移動後に保存）
+                    setTimeout(saveMapPosition, 500); 
+                    
+                    if (currentLocationMarker) {
+                        map.removeLayer(currentLocationMarker);
+                    }
+                    
+                    currentLocationMarker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: "#3742fa",
+                        color: "#fff",
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8,
+                        className: 'current-location-marker'
+                    }).addTo(map);
+
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                },
+                (error) => {
+                    console.error("Geolocation error", error);
+                    let msg = "位置情報を取得できませんでした。";
+                    if (error.code === 1) msg += "（許可されていません）";
+                    else if (error.code === 2) msg += "（位置特定不可）";
+                    else if (error.code === 3) msg += "（タイムアウト）";
+                    
+                    alert(msg);
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 0
+                }
+            );
+        }
+
+        // --- イベント ---
+        
+        map.on('click', function(e) {
+            addMarker(e.latlng.lat, e.latlng.lng);
+        });
+
+        // 地図が動くたびに位置を保存 (moveendはドラッグ終了やズーム終了時に発火)
+        map.on('moveend', saveMapPosition);
+
+        // 起動時にマーカーをロード
+        loadMarkers();
+
+    </script>
+</body>
+</html>
