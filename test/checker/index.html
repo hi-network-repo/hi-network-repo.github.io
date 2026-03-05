@@ -166,8 +166,8 @@
             map.setView([DEFAULT_LAT, DEFAULT_LNG], DEFAULT_ZOOM);
         }
 
-        L.tileLayer('https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
-            attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>',
+        L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            attribution: '&copy; Google',
             maxZoom: 22
         }).addTo(map);
 
@@ -182,8 +182,8 @@
         const checkIcon = L.divIcon({
             className: 'checkmark-icon',
             html: '<div class="checkmark-body marker-anim">✅</div>',
-            iconSize: [40, 40],
-            iconAnchor: [20, 35]
+            iconSize: [24, 24],
+            iconAnchor: [12, 22]
         });
 
         // --- マーカー関数 ---
