@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Map Checkmarker (GSI Pale)</title>
+    <title>Map Checkmarker (Clustered by Date)</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- Leaflet.markercluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
     
     <style>
         body, html {
@@ -70,6 +74,13 @@
             background-color: #535cff;
         }
 
+        .btn-stop {
+            background-color: #ff4757 !important;
+        }
+        .btn-stop:hover {
+            background-color: #ff6b81 !important;
+        }
+
         .status {
             font-size: 12px;
             color: #333;
@@ -86,7 +97,7 @@
         }
 
         .checkmark-body {
-            font-size: 20px;
+            font-size: 20px; /* ピンのサイズを小さく */
             filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.3));
             cursor: pointer;
             transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -121,12 +132,19 @@
             border-radius: 50%;
             animation: pulse 1.5s infinite;
         }
+        
+        /* レイヤーコントロールの表示位置調整 */
+        .leaflet-control-layers {
+            margin-top: 70px !important; /* 上のボタンと被らないように下げる */
+            border-radius: 12px !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+        }
     </style>
 </head>
 <body>
 
     <div class="controls">
-        <button class="btn btn-loc" id="btn-gps" onclick="getCurrentLocation()">現在地</button>
+        <button class="btn btn-loc" id="btn-gps" onclick="toggleLocationTracking()">現在地</button>
         <span class="status" id="count-display">0 個</span>
         <button class="btn" onclick="clearAllMarkers()">全て削除</button>
     </div>
@@ -135,24 +153,25 @@
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Leaflet.markercluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
     <script>
-        // --- 設定 (LocalStorageキー) ---
         const STORAGE_KEY_MARKERS = 'map_checkmarks_v2';
         const STORAGE_KEY_POSITION = 'map_position_v2';
         
-        // デフォルト: 広島駅周辺
         const DEFAULT_LAT = 34.3976;
         const DEFAULT_LNG = 132.4753;
         const DEFAULT_ZOOM = 14;
 
         // --- 地図初期化 ---
-        // まず地図インスタンスを作成（表示位置は後で設定）
         const map = L.map('map', {
-            zoomControl: false
+            zoomControl: false,
+            maxZoom: 18 // クラスター展開のために最大ズームレベルを明記
         });
 
-        // 位置情報の復元を試みる
+        // 位置情報の復元
         const savedPosJson = localStorage.getItem(STORAGE_KEY_POSITION);
         if (savedPosJson) {
             try {
@@ -171,36 +190,86 @@
             maxZoom: 22
         }).addTo(map);
 
-        L.control.zoom({
-            position: 'bottomright'
-        }).addTo(map);
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
 
         let markers = [];
         let currentLocationMarker = null;
+        let trackingInterval = null;
+
+        // --- クラスタリングと日付レイヤー管理 ---
+        // { "2023-10-25": L.markerClusterGroup, "Unknown": L.markerClusterGroup }
+        const clusterGroups = {}; 
+        
+        // レイヤーコントロール（右上にチェックボックスを表示する機能）
+        const layerControl = L.control.layers(null, null, { collapsed: false }).addTo(map);
+
+        function getTodayDateString() {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            return `${yyyy}-${mm}-${dd}`; // 例: "2023-10-25"
+        }
+
+        // 指定した日付のクラスターグループを取得（なければ作成）
+        function getOrCreateClusterGroup(dateStr) {
+            if (!clusterGroups[dateStr]) {
+                const group = L.markerClusterGroup({
+                    maxClusterRadius: 50, // まとまる距離
+                    disableClusteringAtZoom: 17 // ズームレベル17以上ではクラスター化しない
+                });
+                clusterGroups[dateStr] = group;
+                group.addTo(map); // デフォルトでマップに表示
+                
+                // レイヤーコントロールに「日付（またはUnknown）」として追加
+                layerControl.addOverlay(group, `📍 ${dateStr}`);
+            }
+            return clusterGroups[dateStr];
+        }
 
         // --- アイコン定義 ---
         const checkIcon = L.divIcon({
             className: 'checkmark-icon',
             html: '<div class="checkmark-body marker-anim">✅</div>',
-            iconSize: [24, 24],
-            iconAnchor: [12, 22]
+            iconSize: [24, 24], 
+            iconAnchor: [12, 22] 
         });
 
         // --- マーカー関数 ---
 
-        function addMarker(lat, lng, save = true) {
-            const marker = L.marker([lat, lng], { icon: checkIcon }).addTo(map);
+        // dateStr引数を追加（デフォルトはnull）
+        function addMarker(lat, lng, dateStr = null, save = true) {
+            // 日付指定がなければ今日の日付を設定
+            if (!dateStr) {
+                dateStr = getTodayDateString();
+            }
 
-            marker.on('click', function() {
-                map.removeLayer(marker);
+            const marker = L.marker([lat, lng], { icon: checkIcon });
+
+            // クリック削除イベント
+            marker.on('click', function(e) {
+                L.DomEvent.stopPropagation(e); // クラスターズームなど他のイベント発火を防ぐ
+                
+                // 所属しているクラスターグループから削除
+                const group = clusterGroups[dateStr];
+                if (group) {
+                    group.removeLayer(marker);
+                }
+                
                 markers = markers.filter(m => m !== marker);
                 saveMarkers();
                 updateCount();
             });
 
+            // データを保持
             marker._lat = lat;
             marker._lng = lng;
+            marker._date = dateStr;
             markers.push(marker);
+
+            // 該当する日付のクラスターグループに追加
+            const group = getOrCreateClusterGroup(dateStr);
+            group.addLayer(marker);
 
             if (save) {
                 saveMarkers();
@@ -211,14 +280,16 @@
         // --- データ保存/復元 (LocalStorage) ---
 
         function saveMarkers() {
+            // 保存データに date も含めるように変更
             const coords = markers.map(m => ({
                 lat: m._lat,
-                lng: m._lng
+                lng: m._lng,
+                date: m._date
             }));
             try {
                 localStorage.setItem(STORAGE_KEY_MARKERS, JSON.stringify(coords));
             } catch (e) {
-                console.error("保存できませんでした（容量オーバーなどの可能性があります）", e);
+                console.error("保存できませんでした", e);
             }
         }
 
@@ -229,7 +300,9 @@
                     const coords = JSON.parse(jsonStr);
                     if (Array.isArray(coords)) {
                         coords.forEach(coord => {
-                            addMarker(coord.lat, coord.lng, false);
+                            // 旧データ(date無し)の場合は "Unknown" にする
+                            const dateStr = coord.date ? coord.date : "Unknown";
+                            addMarker(coord.lat, coord.lng, dateStr, false);
                         });
                     }
                 } catch (e) {
@@ -243,17 +316,26 @@
         function saveMapPosition() {
             const center = map.getCenter();
             const zoom = map.getZoom();
-            const positionData = {
-                lat: center.lat,
-                lng: center.lng,
-                zoom: zoom
-            };
+            const positionData = { lat: center.lat, lng: center.lng, zoom: zoom };
             localStorage.setItem(STORAGE_KEY_POSITION, JSON.stringify(positionData));
         }
 
         function clearAllMarkers() {
             if (!confirm("全てのチェックマークを削除しますか？")) return;
-            markers.forEach(m => map.removeLayer(m));
+            
+            // クラスターグループとレイヤーコントロールを全てクリア
+            for (const key in clusterGroups) {
+                const group = clusterGroups[key];
+                group.clearLayers();
+                layerControl.removeLayer(group); // 右上のリストから消す
+                map.removeLayer(group);          // 地図から消す
+            }
+            
+            // オブジェクトをリセット
+            for (const key in clusterGroups) {
+                delete clusterGroups[key];
+            }
+
             markers = [];
             localStorage.removeItem(STORAGE_KEY_MARKERS);
             updateCount();
@@ -263,27 +345,21 @@
             document.getElementById('count-display').innerText = `${markers.length} 個`;
         }
 
-        // --- 位置情報取得 ---
+        // --- 位置情報取得（追従機能） ---
         
-        function getCurrentLocation() {
+        function fetchLocation() {
             if (!navigator.geolocation) {
                 alert("お使いのブラウザは位置情報をサポートしていません。");
+                if (trackingInterval) toggleLocationTracking();
                 return;
             }
-
-            const btn = document.getElementById('btn-gps');
-            const originalText = btn.innerText;
-            btn.innerText = "取得中...";
-            btn.disabled = true;
 
             navigator.geolocation.getCurrentPosition(
                 (position) => {
                     const lat = position.coords.latitude;
                     const lng = position.coords.longitude;
                     
-                    // 地図を移動 (アニメーション付き)
                     map.setView([lat, lng], 16);
-                    // 位置情報を保存（移動後に保存）
                     setTimeout(saveMapPosition, 500); 
                     
                     if (currentLocationMarker) {
@@ -299,27 +375,27 @@
                         fillOpacity: 0.8,
                         className: 'current-location-marker'
                     }).addTo(map);
-
-                    btn.innerText = originalText;
-                    btn.disabled = false;
                 },
                 (error) => {
                     console.error("Geolocation error", error);
-                    let msg = "位置情報を取得できませんでした。";
-                    if (error.code === 1) msg += "（許可されていません）";
-                    else if (error.code === 2) msg += "（位置特定不可）";
-                    else if (error.code === 3) msg += "（タイムアウト）";
-                    
-                    alert(msg);
-                    btn.innerText = originalText;
-                    btn.disabled = false;
                 },
-                {
-                    enableHighAccuracy: true,
-                    timeout: 10000,
-                    maximumAge: 0
-                }
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
             );
+        }
+
+        function toggleLocationTracking() {
+            const btn = document.getElementById('btn-gps');
+            if (!trackingInterval) {
+                btn.innerText = "取得停止";
+                btn.classList.add('btn-stop');
+                fetchLocation();
+                trackingInterval = setInterval(fetchLocation, 20000);
+            } else {
+                clearInterval(trackingInterval);
+                trackingInterval = null;
+                btn.innerText = "現在地";
+                btn.classList.remove('btn-stop');
+            }
         }
 
         // --- イベント ---
@@ -328,7 +404,6 @@
             addMarker(e.latlng.lat, e.latlng.lng);
         });
 
-        // 地図が動くたびに位置を保存 (moveendはドラッグ終了やズーム終了時に発火)
         map.on('moveend', saveMapPosition);
 
         // 起動時にマーカーをロード
