@@ -359,7 +359,7 @@
                     const lat = position.coords.latitude;
                     const lng = position.coords.longitude;
                     
-                    map.setView([lat, lng], 16);
+                    map.panTo([lat, lng]);
                     setTimeout(saveMapPosition, 500); 
                     
                     if (currentLocationMarker) {
